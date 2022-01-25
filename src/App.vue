@@ -57,7 +57,7 @@
       <v-btn
         icon
         color="white"
-        href="https://www.linkedin.com/in/youssef-f-017aa6130/"
+        href="https://www.linkedin.com/in/youssef-fathy/"
         target="_blank"
       >
         <v-icon>mdi-linkedin</v-icon>
@@ -95,7 +95,7 @@
             <v-btn
               class="mx-4 white--text"
               icon
-              href="https://www.linkedin.com/in/youssef-f-017aa6130/"
+              href="https://www.linkedin.com/in/youssef-fathy/"
             >
               <v-icon size="24px">mdi-linkedin</v-icon>
             </v-btn>

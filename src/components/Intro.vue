@@ -8,13 +8,14 @@
         <h1>.01 Who Am I</h1>
         <p class="text-justify text-h6">
           I am a full-stack developer with a passion for delivering exceptional
-          digital experiences through simple but efficient UI elements. I am
-          detail-oriented and always looking to develop myself to be better. I
-          have a BS in Software Engineering and a minor in Mathematics from
-          University of Nebraska Lincoln. Although my focus is on front-end
-          development, I also know that data is beautiful. I have worked on
-          multiple backend stacks as well as on machine learning projects. I am
-          currently open to job opportunities. Get In Touch!
+          digital experiences through simple UI designs. I am detail-oriented
+          and always looking to develop myself to be better. I have a BS in
+          Software Engineering and a minor in Mathematics from University of
+          Nebraska Lincoln. Although my focus is on UI/UX, I know data can also
+          be beautiful. I have worked on multiple projects that include data
+          analysis and machine learning, as well as on different backend stacks
+          and always looking for new technologies to learn. I am currently open
+          to job opportunities. Get In Touch!
         </p>
       </v-col>
     </v-row>
