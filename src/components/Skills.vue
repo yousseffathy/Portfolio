@@ -10,8 +10,8 @@
     <v-container>
       <v-row class="mt-16 mb-16 ml-0 mr-0">
         <v-col cols="12" style="align-self: center; color: white">
-          <h1>.02 My toolbox</h1>
-          <h3>
+          <h1 class="text-h2" style="font-family: 'Yellowtail', cursive !important;">.02 My toolbox</h1>
+          <h3 class="text-justify text-h5" style="font-family: 'Lato', sans-serif !important;">
             These are some technologies that I have used during my school time,
             personal projects as well as in my internships:
           </h3>
@@ -26,7 +26,7 @@
               <v-icon x-large color="white" class="ma-5">{{
                 tech.icon
               }}</v-icon>
-              <p>{{ tech.name }}</p>
+              <p class="text-h6" style="font-family: 'Lato', sans-serif !important;">{{ tech.name }}</p>
             </v-col>
           </v-row>
         </v-col>

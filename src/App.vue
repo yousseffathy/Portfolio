@@ -48,8 +48,15 @@
         </v-card-text>
       </v-card>
     </v-dialog>
-    <v-app-bar app dense dark hide-on-scroll class="black">
-      <v-toolbar-title> Youssef Fathy </v-toolbar-title>
+    <v-app-bar
+      app
+      dense
+      dark
+      hide-on-scroll
+      class="black"
+      style="max-width: 100%"
+    >
+      <v-toolbar-title style="font-family: 'Yellowtail', cursive"> Youssef Fathy </v-toolbar-title>
       <v-spacer />
       <v-btn icon color="white" @click="dialog = true">
         <v-icon>mdi-email-edit</v-icon>
@@ -72,22 +79,26 @@
       </v-btn>
     </v-app-bar>
     <v-main class="main">
-      <v-parallax dark src="./assets/rain.gif" height="800">
-        <v-row align="center" justify="center">
-          <v-col class="text-center" cols="12">
-            <h1 class="text-h3 font-weight-bold mb-4">Youssef Fathy</h1>
-            <h3 class="subheading font-weight-bold">
-              Full-stack developer with passion for UX
-            </h3>
+      <div class="parallax">
+        <v-row align="center" justify="center" style="max-width: 100%">
+          <v-col class="text-center text" cols="12">
+            Hi, I'm <span class="highlight">Youssef Fathy</span>. <br />
+            I'm a full-stack web developer.
           </v-col>
         </v-row>
-      </v-parallax>
+      </div>
       <Intro />
       <Skills />
       <Experience />
       <Projects />
       <v-footer dark padless>
-        <v-card flat tile class="white--text text-center" color="black" style="width: 100%">
+        <v-card
+          flat
+          tile
+          class="white--text text-center"
+          color="black"
+          style="width: 100%"
+        >
           <v-card-text>
             <v-btn class="mx-4 white--text" icon @click="dialog = true">
               <v-icon size="24px">mdi-email-edit</v-icon>
@@ -109,8 +120,9 @@
           </v-card-text>
 
           <v-card-text class="white--text pt-0">
-            Designed and coded by Youssef Fathy. Check out my github, I am always working
-            pn something. You can also reach out to me by email or on linkedin!
+            Designed and coded by Youssef Fathy. Check out my github, I am
+            always working on something. You can also reach out to me by email
+            or on linkedin!
           </v-card-text>
 
           <v-divider></v-divider>
@@ -191,8 +203,42 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-.main
-  background-image: url("./assets/brick3.jpg")
-  background-attachment: fixed
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+.main{
+  background-image: url("./assets/brick3.jpg");
+  background-attachment: fixed;
+}
+.parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/rain.gif");
+  height: calc(100vh + 10px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  color: white;
+  font-size: calc(2vw + 1.5vh + 1.5vmin);
+  pointer-events: none;
+  z-index: 1;
+  font-family: 'Lato', sans-serif;
+  
+}
+.highlight {
+  font-family: 'Yellowtail', cursive;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+}
 </style>

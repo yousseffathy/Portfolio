@@ -5,8 +5,8 @@
         <v-img class="profile" src="../assets/me.jpg"></v-img>
       </v-col>
       <v-col cols="12" sm="9" style="align-self: center; color: white">
-        <h1>.01 Who Am I</h1>
-        <p class="text-justify text-h6">
+        <h1 class="text-h2" style="font-family: 'Yellowtail', cursive !important;">.01 Who Am I</h1>
+        <p class="text-justify text-h5" style="font-family: 'Lato', sans-serif !important;">
           I am a full-stack developer with a passion for delivering exceptional
           digital experiences through simple UI designs. I am detail-oriented
           and always looking to develop myself to be better. I have a BS in
@@ -36,5 +36,8 @@ export default {
   max-width: 300px;
   aspect-ratio: 1 / 1;
   padding: 15px;
+}
+.header {
+  font-family: 'Yellowtail', cursive;
 }
 </style>
